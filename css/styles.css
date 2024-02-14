@@ -1,0 +1,235 @@
+/*Andria Vanezi 87654654654*/
+/*html element selector root element*/
+html{
+/* font shorthand 6 propteries  
+        font-style - normal, italic, oblique
+        font-variant - normal, small-caps
+        font-weight  - lighter, light,  normal, bold, bolder,  100 - 900
+        font-size/line-height
+        font-family
+         Times, "Times New Roman", Georgia, serif;
+        "Lucida Console", Courier, monospace;
+        Verdana, Arial, Helvetica, sans-serif
+    */
+ 
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 30px;
+    line-height : 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+      /*absolute units px*/
+   font : normal normal normal 20px/1.5 Verdana, Arial, Helvetica, sans-serif;
+   
+
+
+  
+}
+/*body element selector*/
+body{
+
+    width : 100%; /*% relative to parent element*/
+    max-width : 1300px; /*absolute units px*/
+    margin : 0 auto; /*margin set to auto for right and left center elemnts inside their parent*/
+    padding : 0.25rem; /*rem releative to root element font size*/
+
+}
+
+/*p element selector*/
+p{
+    color:blueviolet;/* Set text color to blueviolet */
+
+}
+
+/*h2 element selector*/
+h2{
+    color:blueviolet;/* Set text color to blueviolet */
+}
+/*id selector*/
+#header-heading{
+
+    color : darkcyan;/* Set text color to darkcyan */
+}
+/*class selector*/
+.heading{
+    color : darkorchid; /* Set text color to darkorchid */
+}
+/*p element selector*/
+p{
+    color : darkolivegreen;/* Set text color to darkolivegreen */
+}
+/*h1 element selector*/
+h1{
+    color : red !important;/* Set text color to red */
+}
+
+/*multiple list selector*/
+img, video, iframe{
+    width : 50%; /*set width to 50% of the parent element*/
+    height : 50%;/*set height to 50% of the parent element*/
+}
+
+/*named colour*/
+/*6-HEX*/
+p{
+    color : #7e876c;
+}
+/*3-HEX*/
+p{
+   /* background-color: #fc9; /* same as #ffcc99 */
+    color: #b58; /* same as #bb5588 */
+}
+/*RGB red green blue*/
+p{
+    color : rgb(99, 1, 99);
+}
+/*RGBA alpha*/
+p{
+    color : rgba(255, 99, 71, 0.5);
+}
+/*HSL hue saturation lightness*/
+p{
+    color : hsl(358, 10%, 10%);
+}
+/*HSLA alpha*/
+p{
+    color : hsl(253, 100%, 64%);
+}
+
+section p{
+    background-color: #f6f7f4;
+}
+blockquote{
+    font-size : 1.5rem;
+}
+blockquote > cite{
+    
+    color: #b58;
+    font-size : .75em;
+}
+
+h2 + blockquote{
+
+    font-size : 1.5rem;
+}
+
+h6 ~ p{
+    font-size : 1.5rem;
+}
+
+h1, h2{
+    font-variant: small-caps;
+}
+
+footer p{
+    font-size : 0.5rem;
+    color : black;
+
+
+}
+div .span-heading{
+    font-variant: small-caps;
+}
+div #seo{
+    font-weight: bolder;
+}
+div{
+    margin-top: 1rem;
+    margin-bottom : .5rem;
+    margin-right : 1.5rem;
+    margin-left : .25rem;
+
+    margin : 1rem;
+    margin : 1rem 1.5rem;
+    margin : 1rem .5rem 1.5rem;
+    margin : 1rem 1.25rem .5rem 1.5rem;
+    width : 80%;
+    margin : 1rem auto;
+
+    padding-top: 1rem;
+    padding-bottom : .5rem;
+    padding-right : 1.5rem;
+    padding-left : .25rem;
+
+    padding : 1rem;
+    padding : 1rem 1.5rem;
+    padding : 1rem .5rem 1.5rem;
+    padding : 1rem 1.25rem .5rem 1.5rem;
+
+    border-width : .25rem;
+    border-style : solid;
+    border-color : black;
+
+    border-top-style: solid;
+    border-bottom-style : double;
+    border-right-style : dotted;
+    border-left-style : dashed;
+
+    border-top-width: 1.5rem;
+    border-bottom-width : 1.25rem;
+    border-right-width: .5rem;
+    border-left-width : .25rem;
+
+    border-top-color: red;
+    border-bottom-color : green;
+    border-right-color: blue;
+    border-left-color : orange ;
+
+    border : .5rem double green;
+}
+/*
+
+*{
+    font-style: italic;
+}
+*/
+.main-section{
+    background-color: hsla(193, 15%, 88%, 0.1);
+}
+footer, header{
+
+    height : 10vh; 
+    margin : 1rem;
+    border : .5rem double #7e876c;
+    
+    background-image: linear-gradient(lightpink 50%,  #f6f7f4 50%);
+}
+.main-section-figure{
+    height : 60%;
+    width : 60%;
+    text-align: center;
+   
+}
+.main-section-figure img{
+    height : 60%;
+    width : 60%;
+    border-radius : 1rem;
+    padding : .5rem;
+
+
+}
+video, iframe{
+    height : 60%;
+    width : 60%;
+}
+main{
+    margin : 1rem;
+}
+#relative-path-image{
+    border : .25rem solid rgb(99, 1, 99);
+    color : rgb(99, 1, 99);
+    border-radius : 1rem;
+    background-color: hsla(304, 18%, 82%, 0.5);
+
+}
+#absolute-path-image{
+    border : .25rem solid rgb(16, 8, 79);
+    border-radius : 1rem;
+    color : rgb(16, 8, 79);
+    background-color: hsla(238, 75%, 86%, 0.5);
+}
+#quote{
+    border : .25rem solid #b58;
+    box-shadow: .5rem .5rem .5rem black;
+}
