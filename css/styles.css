@@ -1,5 +1,8 @@
 /*Andria Vanezi 87654654654*/
 /*html element selector root element*/
+*{
+    margin : 0px;
+}
 html{
 /* font shorthand 6 propteries  
         font-style - normal, italic, oblique
@@ -64,11 +67,7 @@ h1{
     color : red !important;/* Set text color to red */
 }
 
-/*multiple list selector*/
-img, video, iframe{
-    width : 50%; /*set width to 50% of the parent element*/
-    height : 50%;/*set height to 50% of the parent element*/
-}
+
 
 /*named colour*/
 /*6-HEX*/
@@ -96,87 +95,100 @@ p{
 p{
     color : hsl(253, 100%, 64%);
 }
-
+/*Descendant combinator selector*/
 section p{
     background-color: #f6f7f4;
 }
+/*type element selector*/
 blockquote{
     font-size : 1.5rem;
 }
+/*Child combinator selector*/
 blockquote > cite{
     
     color: #b58;
     font-size : .75em;
 }
-
+/*Adjacent sibling slector*/
 h2 + blockquote{
 
     font-size : 1.5rem;
 }
-
+/*General sibling selector*/
 h6 ~ p{
     font-size : 1.5rem;
 }
-
+/*Multiple Elements and Selectors*/
 h1, h2{
     font-variant: small-caps;
 }
-
+/*Descendant combinator selector*/
 footer p{
     font-size : 0.5rem;
     color : black;
 
 
 }
+/*Descendant combinator selector with class*/
 div .span-heading{
     font-variant: small-caps;
 }
+/*Descendant combinator selector with id*/
 div #seo{
     font-weight: bolder;
 }
+/*type or element selector*/
 div{
-    margin-top: 1rem;
+    /*margins*/
+ /*   margin-top: 1rem;
     margin-bottom : .5rem;
     margin-right : 1.5rem;
     margin-left : .25rem;
 
-    margin : 1rem;
+    /*margin short hand*/
+   /* margin : 1rem;
     margin : 1rem 1.5rem;
     margin : 1rem .5rem 1.5rem;
     margin : 1rem 1.25rem .5rem 1.5rem;
     width : 80%;
-    margin : 1rem auto;
+    margin : 1rem auto;*/
 
-    padding-top: 1rem;
+    /*padding*/
+   /* padding-top: 1rem;
     padding-bottom : .5rem;
     padding-right : 1.5rem;
     padding-left : .25rem;
 
-    padding : 1rem;
+    /*padding shorthand*/
+ /*   padding : 1rem;
     padding : 1rem 1.5rem;
     padding : 1rem .5rem 1.5rem;
     padding : 1rem 1.25rem .5rem 1.5rem;
 
-    border-width : .25rem;
-    border-style : solid;
-    border-color : black;
+    border-width : .25rem; /*sets the width of the border*/
+   /* border-style : solid; /*sets the styleof the border*/
+  /*  border-color : black;  /*sets the color of the border*/
 
-    border-top-style: solid;
+    /*sets the styleof the border*/
+  /*  border-top-style: solid;
     border-bottom-style : double;
     border-right-style : dotted;
     border-left-style : dashed;
 
-    border-top-width: 1.5rem;
+    /*sets the width of the border*/
+   /* border-top-width: 1.5rem;
     border-bottom-width : 1.25rem;
     border-right-width: .5rem;
     border-left-width : .25rem;
 
-    border-top-color: red;
+    /*sets the color of the border*/
+   /* border-top-color: red;
     border-bottom-color : green;
     border-right-color: blue;
     border-left-color : orange ;
 
-    border : .5rem double green;
+    /*border shorthand property width, style colour */ 
+  /*  border : .5rem double green;*/
 }
 /*
 
@@ -185,51 +197,213 @@ div{
 }
 */
 .main-section{
-    background-color: hsla(193, 15%, 88%, 0.1);
+    background-color: hsla(193, 15%, 88%, 0.1);  /*applies background colour*/
 }
+
+/*multiple selector*/
 footer, header{
 
-    height : 10vh; 
-    margin : 1rem;
-    border : .5rem double #7e876c;
-    
+    height : 10vh; /*set height with viewport units*/
+    margin : 1rem; /*relevative to the root units*/
+    border : .5rem double #7e876c; /*relevative to the root units*/
+    /*applies a gradient background colour*/
     background-image: linear-gradient(lightpink 50%,  #f6f7f4 50%);
 }
+/*
 .main-section-figure{
     height : 60%;
     width : 60%;
-    text-align: center;
+    text-align: center;/*center-align text
    
-}
+}*/
+
 .main-section-figure img{
-    height : 60%;
-    width : 60%;
-    border-radius : 1rem;
-    padding : .5rem;
+    height : 60%; /*set width to 60% of the parent element*/
+    width : 60%;/*set height to 60% of the parent element*/
+    border-radius : 1rem; /*relevative to the root units*/
+    padding : .5rem; /*relevative to the root units*/
 
 
 }
+/*Multiple Elements and Selectors*/
 video, iframe{
-    height : 60%;
-    width : 60%;
+    width : 80%; /*set width to 50% of the parent element*/
+    height : 70%;/*set height to 50% of the parent element*/
 }
+
 main{
-    margin : 1rem;
-}
-#relative-path-image{
-    border : .25rem solid rgb(99, 1, 99);
-    color : rgb(99, 1, 99);
-    border-radius : 1rem;
-    background-color: hsla(304, 18%, 82%, 0.5);
+    margin : 1rem; /*relevative to the root units*/
+    width : 66.5%;
+    float : left; 
 
 }
-#absolute-path-image{
-    border : .25rem solid rgb(16, 8, 79);
-    border-radius : 1rem;
-    color : rgb(16, 8, 79);
-    background-color: hsla(238, 75%, 86%, 0.5);
+aside{
+    margin : 1rem; 
+    width : 26.5%;
+    float : right;
 }
+footer{
+    clear : both;
+}
+
+/*id selector for the figure with the id of absolute-path-image*/
+#absolute-path-image{
+    /*border shorthand property width, style colour */ 
+    border : .25rem solid rgb(16, 8, 79); /*relevative to the root units*/
+      /*rounds the corners of the border
+    border-radius*/
+    border-radius : 1rem; /*relevative to the root units*/
+    color : rgb(16, 8, 79);
+    background-color: hsla(238, 75%, 86%, 0.5); /*applies background colour*/
+    margin : 0;
+}
+/*id selector for the figure with the id of quote*/
 #quote{
+      /*border shorthand property width, style colour */ 
     border : .25rem solid #b58;
-    box-shadow: .5rem .5rem .5rem black;
+   /* Specify a horizontal and a vertical shadow*/
+   box-shadow: .5rem .5rem .5rem black; /*relevative to the root units*/
+}
+nav{
+    background-color: #b58;
+    padding: 0 1rem 2rem 1rem ;
+    margin : 1rem;
+    text-align: center;
+ 
+}
+nav ul{
+    list-style-type: none;
+    padding : 0.25rem;
+    margin : 0 0.25rem;
+    
+}
+
+nav > ul > li > a{
+    color: blueviolet;
+    background-color:   #f6f7f4;
+    display : block;
+    text-decoration: none;
+    border : 0.1rem solid blueviolet;
+
+}
+nav > ul > li > a:hover{
+    color:  #f6f7f4;
+    background-color: blueviolet; 
+    border : 0.1rem solid  #f6f7f4;;
+
+
+}
+#home-link{
+    float :left;
+    width : 50%;
+}
+#contact-link{
+    float : right;
+    width : 50%
+}
+
+aside ol{
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+    list-style-type: lower-roman;
+    list-style-type: upper-roman;
+}
+
+aside ul{
+    list-style-type: disc;
+    list-style-type: circle;
+    list-style-type: square;
+
+}
+#bio{
+    width : 30%;
+    float : left;
+    padding : 0.25rem;
+    margin : .25rem;
+}
+/*id selector for the figure with the id of relative-path-image*/
+#relative-path-image{
+    padding : 0.25rem;
+  margin : .25rem;
+    /*border shorthand property width, style colour */ 
+  border : .25rem solid rgb(99, 1, 99); /*relevative to the root units*/
+  color : rgb(99, 1, 99);
+  /*rounds the corners of the border
+  border-radius*/
+  border-radius : 1rem; /*relevative to the root units*/
+  background-color: hsla(304, 18%, 82%, 0.5); /*applies background colour*/
+  width : 25%;
+  float : right;
+  
+
+}
+#q{
+    clear : both;
+}
+table, th, td{
+    border : .1rem solid black;
+}
+#gender_fieldset{
+    border : none;
+    padding : 0;
+}
+/*
+input[type=radio]{
+    width : 900px;
+}*/
+input[type=email], input[type=text], select, textarea{
+    width : 50%;
+}
+label, input[type=submit]{
+    font-variant: small-caps;
+    color : blue;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#gender_radio{
+  padding: 0;
+}
+
+input[type=text], input[type=email], input[type=text], select, textarea, input[type=tel], input[type=url], input[type=submit]{
+    width : 100%;
+}
+
+@media (max-width: 900px){
+    html{
+        font-size : 15px;
+    }
+    #bio{
+        float : none;
+        width : 100%
+    }
+    #relative-path-image{
+        float : none;
+        width : 100%;
+
+    }
+}
+@media (max-width : 600px){
+    html{
+        font-size : 12px;
+    }
+    #home-link{
+        float : none;
+        width : 100%;
+    }
+    #contact-link{
+        float : none;
+        width : 100%;
+    }
+    main{
+        float : none;
+        width : 100%;
+    }
+    aside{
+        float : none;
+        width: 100%;
+        text-align: center;
+    }
+    table{
+        margin: 0 auto;
+    }
 }

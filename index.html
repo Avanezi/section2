@@ -1,3 +1,4 @@
+
 <!--Andria Vanezi 879845698 -->
 <!--this is the document type declaration-->
 <!DOCTYPE html>
@@ -49,6 +50,12 @@
         <h1 id="header-heading" class="heading">HTML & CSS for Beginners</h1>
 
     </header>
+    <nav>
+        <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <!--this is the semantic main element that defines the body's main-->
     <main>
         <!--this is a section element nested in the main-->  
@@ -107,17 +114,29 @@
         <section class="main-section">
             <h2>Biography</h2>
             <!--This is a blockquote element has a site attribute-->
-            <blockquote id="bio" cite="https://en.wikipedia.org/wiki/Mahatma_Gandhi">
-                <!--these are presentation elements are inline elements-->
-                <p><strong>Mohandas Karamchand Gandhi</strong> (ISO: Mōhanadāsa Karamacaṁda Gāṁdhī[pron 1]; 2 October 1869 - 30 January 1948) was an Indian lawyer, anti-colonial nationalist and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule. He inspired movements for civil rights and freedom across the world. The honorific Mahātmā (from Sanskrit 'great-souled, venerable&apos;), first applied to him in South Africa in 1914, is now used throughout the world.
-
-                </p>
-              
-            </blockquote>
-            
+            <div>
+                <blockquote id="bio" cite="https://en.wikipedia.org/wiki/Mahatma_Gandhi">
+                    <!--these are presentation elements are inline elements-->
+                    <p><strong>Mohandas Karamchand Gandhi</strong> (ISO: Mōhanadāsa Karamacaṁda Gāṁdhī[pron 1]; 2 October 1869 - 30 January 1948) was an Indian lawyer, anti-colonial nationalist and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule. He inspired movements for civil rights and freedom across the world. The honorific Mahātmā (from Sanskrit 'great-souled, venerable&apos;), first applied to him in South Africa in 1914, is now used throughout the world.
+    
+                    </p>
+                  
+                </blockquote>
+                <figure class="main-section-figure" id="relative-path-image">
+                    <!--DO NOT LINK IMAGE LIKE THIS-->
+                    <!--<img src="C:\Users\theoa\OneDrive\Documents\Conestoga Courses\Prog1247\W2024\section2\example1\images\puppy.jpg">
+                    -->
+                     <!--alternative text attribute-->
+                    <!--relative path image-->
+                    <img src="images/puppy.jpg" alt="A small white puppy wearing a pink sweater sitting on a green carpet." title="Image of a dog">
+                    <!--This is a figure caption element-->
+                    <figcaption>My puppy</figcaption>
+                </figure>
+            </div>
+         
         </section>
              <!--this is a section element nested in the main--> 
-        <section class="main-section">
+        <section class="main-section" id="q">
             <h2>Quote</h2>
             <!--This is a blockquote element has a site attribute-->
             <blockquote id="quote" cite="https://timesofindia.indiatimes.com/blogs/the-photo-blog/remembering-gandhi-top-10-quotes-by-the-mahatma/">
@@ -134,16 +153,7 @@
         <section class="main-section">
             <h2>Images</h2>
             <!--This is a figure element-->
-            <figure class="main-section-figure" id="relative-path-image">
-                <!--DO NOT LINK IMAGE LIKE THIS-->
-                <!--<img src="C:\Users\theoa\OneDrive\Documents\Conestoga Courses\Prog1247\W2024\section2\example1\images\puppy.jpg">
-                -->
-                 <!--alternative text attribute-->
-                <!--relative path image-->
-                <img src="images/puppy.jpg" alt="A small white puppy wearing a pink sweater sitting on a green carpet." title="Image of a dog">
-                <!--This is a figure caption element-->
-                <figcaption>My puppy</figcaption>
-            </figure>
+           
               <!--This is a figure element-->
             <figure class="main-section-figure" id="absolute-path-image">
                 <!--absolute path image-->
@@ -177,6 +187,80 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hpZwCRInrgo?si=Squ_UdZ9VHsw_NOr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </secion>
     </main>
+    <aside>
+        <h3>Unordered List </h3>
+        <ul>
+            <li>apples</li>
+            <li>oranges</li>
+            <li>pears</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>January</li>
+            <li>Feb</li>
+            <li>March</li>
+
+        </ol>
+        <h3>Description List</h3>
+        <dl>
+            <dt>Name</dt>
+            <dd>Andria Vanezi</dd>
+            <dt>Profession</dt>
+            <dd>Professor</dd>
+            <dt>Employer</dt>
+            <dd>Conestoga college</dd>
+        </dl>
+        <h3>Types of Links </h3>
+        <a href="mailto:avanezi@conesotgac.on.ca">Email Prog1247 Professor</a>
+        <br> <a href="tel:519-555-5555">Call the Prog1247 Professor </a>
+        <br> <a href="https://www.youtube.com/?gl=CA" target="_blank">YouTube</a>
+        <br> <a href="pdf/Assignment 2 HTML CSS .pdf" target="_blank">Assignment 2</a>
+        <br> <a href="pdf/Into HTML & CSS W24.pptx">Power Point</a>
+        <br> <a href="https://www.youtube.com/?gl=CA" target="_blank" title="Click to go to YouTube"><img src="images/puppy.jpg" width="100" height="100"></a>
+        <br> <a href="#bio">Biography</a>
+
+        <h3>Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>One</th>
+                    <th>Two</th>
+                    <th>Three</th>
+                    <th>Four</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                    <td>data 4</td>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                    <td>data 4</td>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                    <td>data 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>total</td>
+                    <td>total</td>
+                    <td>total</td>
+                    <td>total</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </aside>
     <!--this is the semantic footer element that defines the body's footer-->   
     <footer>
         <!--this is character entity - special character-->

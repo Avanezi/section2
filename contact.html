@@ -1,0 +1,304 @@
+<!--Andria Vanezi 879845698 -->
+<!--this is the document type declaration-->
+<!DOCTYPE html>
+<!--This is the html element (root element) with the lang attribute specifies the language of the element's content is english-->
+<html lang="en">
+    <!--this is the head element-->
+<head>
+     <!--this is metadata defining character set-->
+    <meta charset="UTF-8">
+    <!--this metadata setting the viewport to make a website look good on all devices-->
+    <!-- imporatant for responsive design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this metadata defining keywords for search engines-->
+    <!-- imporatant for SEO-->
+    <meta name="keywords" content="HTML,CSS,WEB,development,beginner">
+    <!--this metadata Defining a description of the web page-->
+    <!-- imporatant for SEO-->
+    <meta name="description" content="This is site is for beginners to leanr HTML and CSS.">
+    <!--This is embedded css applied before the external css-->
+    <style>
+        p{
+            color:red;
+        }
+    </style>
+    <!--links to external css files. CSS will be applied from top to bottom-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--This is embedded css applied after the external css-->
+    <!--<style>
+         p{
+            color:blue;
+        }
+    </style>-->
+     
+    <!--Define a title for your HTML document and a title in the browser toolbar-->
+    <!-- imporatant for SEO + Accessibility-->
+    <title>
+        HTML & CSS for Beginners
+    </title>
+</head>
+<!--this is the body element that defines the document's body-->
+<body>
+    <!--this is the semantic header element that defines the body's header-->
+    <header>
+         <!--this the most importmant heading element-->
+        <!--this element has a class attribute-->
+        <!--this element has an id  attribute-->
+        <!--this is inline css for the h1 element-->
+        <h1 id="header-heading" class="heading">HTML & CSS for Beginners</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--this is the semantic main element that defines the body's main-->
+    <main>
+      <h2>Contact</h2>
+      <form name="contact_form" id="contact_form" method="post" action="contact.php" autocomplete="off">
+            <div>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" autofocus required>
+                    
+                    </div>
+                    <div>    
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <fieldset id="gender_fieldset">
+                        <legend>What is the gender?</legend>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="other">Other</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                    </fieldset>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="website">What is your website?</label>
+                        <input type="url" name="website" id="website">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="555-555-5555">
+                    </div>
+                    <div>
+                        <label for="pets">How many pets do you have?</label>
+                        <input type="number" name="pets" id="pets" min="1" max="10" step="2">
+                    </div>
+                    <div>
+                        <label for="dob">What is your date of brith?</label>
+                        <input type="date" name="dob" id="dob" min="1981-05-05" max="2024-03-13">
+                    </div>
+                    <div>
+                        <label for="mob">What is your month of brith?</label>
+                        <input type="month" name="mob" id="mob">
+                    </div>
+                    <div>
+                        <label for="week">What week is exams?</label>
+                        <input type="week" name="week" id="week">
+                    </div>
+                    <div>
+                        <label for="time">What time the exam?</label>
+                        <input type="time" name="time" id="time">
+                    </div>
+                    <div>
+                        <label for="colour">What is your favourite colour?</label>
+                        <input type="color" name="colour" id="colour">
+                    </div>
+                    <div>
+                        <label for="html">On a scale of 1 to 10,how much do you like HTML?</label>
+                        <input type="range" nme="html" id="html" min="1" max="10" step="1" value="10">
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <input type="hidden" name="honeypot" value="">
+                <input type="hidden" name="userid" value="1234">
+                <label for="ro">What field attribute?</label>
+                <input type="text" name="ro" id="ro" value="Read-only" readonly>
+             
+            </div>
+            <div>
+                <label for="dis">What field attribute? </label>
+                <input type="text" name="dis" id="dis" value="Diabeled" disabled>
+            </div>
+          
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" maxlength="12" size="12">
+            </div>
+            <div>
+                <label for="document">Documents</label>
+                <input type="file" name="document" id="document" multiple>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" rows="10" cols="30"></textarea>
+            </div>
+            <div>
+             
+                <fieldset>
+                    <legend>What streaming services do you use?</legend>
+                    <label for="netflix">Netflix</label>
+                    <input type="checkbox" name="streaming" id="netflix" value="netflix" checked required>
+                    <label for="disney">Disney</label>
+                    <input type="checkbox" name="streaming" id="disney" value="disney" checked>
+                    <label for="prime">Prime Video</label>
+                    <input type="checkbox" name="streaming" id="prime" value="prime">
+                
+                
+                
+                </fieldset>
+
+             
+
+            </div>
+            <div>
+                <label for="month">What is the current month?</label>
+                <select name="month" id="month">
+                    <option value="">Select</option>
+                    <option value="1">January</option>
+                    <option value="2" selected>February</option>
+                    <option value="3">March</option>
+                </select>
+               
+            </div>
+            <div>
+                <label for="day">What are favourite day(s)?</label>
+                <select name="day" id="day" multiple size="2">
+                    <option value="">Select</option>
+                    <option value="1">Monday</option>
+                    <option value="2" selected>Tuesday</option>
+                    <option value="3">Wednesday</option>
+                </select>
+            </div>
+            <div>
+                <label for="state_province">What is your State/Province?</label>
+                <select name="state_province" id="state_province">
+                    <optgroup label="States">
+                        <option value="1">Alabama</option>
+                        <option value="2">Alaska</option>
+                        <option value="3">New York</option>
+                        <option value="4">Floridia</option>
+                    </optgroup>
+                    <optgroup label="Provinces">
+                        <option value="53">Alberta</option>
+                        <option value="54">British Columbia</option>
+                        <option value="55">Manitoba</option>
+                        <option value="56">Ontario</option>
+                    </optgroup>
+                 
+                </select>
+
+            </div>
+            <div>
+                <label for="robot">I am not a robot</label>
+                <input type="checkbox" name="robot" id="robot" value="True">
+                <input type="reset" name="clear" id="clear" value="Clear Form">
+                <input type="submit" name="submit" id="submit" value="Submit Form">
+                <button type="reset">My button</button>
+                <button type="submit">My button</button>
+            </div>
+    
+           
+      </form>
+
+
+
+
+      
+    </main>
+    <aside>
+        <h3>Unordered List </h3>
+        <ul>
+            <li>apples</li>
+            <li>oranges</li>
+            <li>pears</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>January</li>
+            <li>Feb</li>
+            <li>March</li>
+
+        </ol>
+        <h3>Description List</h3>
+        <dl>
+            <dt>Name</dt>
+            <dd>Andria Vanezi</dd>
+            <dt>Profession</dt>
+            <dd>Professor</dd>
+            <dt>Employer</dt>
+            <dd>Conestoga college</dd>
+        </dl>
+        <h3>Types of Links </h3>
+        <a href="mailto:avanezi@conesotgac.on.ca">Email Prog1247 Professor</a>
+        <br> <a href="tel:519-555-5555">Call the Prog1247 Professor </a>
+        <br> <a href="https://www.youtube.com/?gl=CA" target="_blank">YouTube</a>
+        <br> <a href="pdf/Assignment 2 HTML CSS .pdf" target="_blank">Assignment 2</a>
+        <br> <a href="pdf/Into HTML & CSS W24.pptx">Power Point</a>
+        <br> <a href="https://www.youtube.com/?gl=CA" target="_blank" title="Click to go to YouTube"><img src="images/puppy.jpg" width="100" height="100"></a>
+        <br> <a href="#bio">Biography</a>
+
+        <h3>Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>One</th>
+                    <th>Two</th>
+                    <th>Three</th>
+                    <th>Four</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                    <td>data 4</td>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                    <td>data 4</td>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                    <td>data 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>total</td>
+                    <td>total</td>
+                    <td>total</td>
+                    <td>total</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </aside>
+    <!--this is the semantic footer element that defines the body's footer-->   
+    <footer>
+        <!--this is character entity - special character-->
+        <p>&copy; andria vanezi 2024 &#169;</p>
+            
+    </footer>
+    
+</body>
+</html>
